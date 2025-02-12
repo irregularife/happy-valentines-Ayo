@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day, My Love!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>Happy Valentine's Day, My Love! <i class="fas fa-heart"></i></h1>
+    </header>
+    <div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+<div class="heart">❤️</div>
+
+    <section class="message">
+      <p>Dearest Ayomitunde,</p>
+      <p>Roses are red, Violets are blue</p>
+         <p>There's no chocolate that's sweeter than you! </p>
+      <p>You mean the world to me. Every moment with you feels like a dream come true. I love your smile, your laugh, and the way you make me feel so special. You are my everything, and I’m so grateful to have you in my life.</p>
+      <p>Forever yours,</p>
+      <p>Ifeoluwa</p>
+    </section>
+   
+    <section class="photos">
+      <img src="photo1.jpg" alt="Our Photo">
+      <img src="photo2.jpg" alt="Another Photo">
+    </section>
+
+    <section class="love-meter">
+        <h2>Love Meter</h2>
+        <p>How much do you love me?</p>
+        <input type="range" id="love-slider" min="0" max="100" value="50">
+        <p id="love-percentage">50%</p>
+      </section>
+
+    <button onclick="showSurprise()">Click for a Surprise!</button>
+<p id="surprise" style="display: none;">I love you more than all the arguments and misunderstandings, my heart.</p>
+
+    <footer>
+      <p>Made with ❤️ by Your Quell</p>
+    </footer>
+  </div>
+  <script>
+   const slider = document.getElementById("love-slider");
+const percentage = document.getElementById("love-percentage");
+
+slider.oninput = function() {
+  percentage.innerText = `${this.value}%`;
+  if (this.value == 100) {
+    percentage.innerText += " ❤️ You love me to the moon and back!";
+  }
+};
+    function showSurprise() {
+        document.getElementById("surprise").style.display = "block";
+      }
+      </script>
+</body>
+
+</html>

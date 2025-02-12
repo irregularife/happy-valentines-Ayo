@@ -1,0 +1,171 @@
+body {
+    background-color: #ffebee; /* Light pink background */
+    color: #880e4f; /* Deep pink text */
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 10px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg);
+    margin: 10px;
+  }
+  h1, .message p {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+  }
+  
+  .photos img {
+    filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.8));
+  }
+  
+  .photos img:nth-child(even) {
+    transform: rotate(-5deg);
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .heart {
+    position: absolute;
+    color: #ff6b6b;
+    font-size: 2rem;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  /* Add multiple hearts */
+  .heart:nth-child(1) { left: 10%; top: 20%; }
+  .heart:nth-child(2) { left: 30%; top: 50%; }
+  .heart:nth-child(3) { left: 70%; top: 10%; }
+  .heart:nth-child(4) { left: 80%; top: 70%; }
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #d32f2f; /* Red color for the heading */
+  }
+  h1 i {
+    color: #d32f2f;
+    margin-left: 10px;
+  }
+  .message {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  
+  .photos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .photos img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #880e4f;
+  }
+  .love-meter {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff0f6; /* Soft pink background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .love-meter h2 {
+    font-family: 'Pacifico', cursive;
+    color: #d32f2f; /* Romantic red */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .love-meter p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #880e4f; /* Deep pink */
+  }
+  
+  #love-slider {
+    width: 80%;
+    margin: 20px 0;
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    height: 10px;
+    background: #ffccd5; /* Light pink track */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  #love-slider:hover {
+    opacity: 1;
+  }
+  
+  #love-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #d32f2f; /* Red thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #love-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #d32f2f; /* Red thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #love-percentage {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #d32f2f; /* Romantic red */
+    margin-top: 10px;
+  }
+  body {
+    position: relative;
+    padding: 20px;
+  }
+  
+  body {
+    border: 10px dashed #ff6b6b; /* Pink dashed border */
+    border-radius: 15px; /* Rounded corners */
+  }
+  footer {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
